@@ -1,0 +1,94 @@
+.section1{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav{
+        padding: 50px 10px;
+        width: 100%;
+        @include between;
+        a{
+            color: white;
+            font-style: italic;
+            font-size: 30px;
+        }
+        i{
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .center{
+        width: 100%;
+        min-height: 675px;
+        @include center;
+        text-align: center;
+        gap: 20px;
+        h1{
+            font-size: 80px;
+            color: white;
+        }
+        p{
+            font-size: 30px;
+            color: white;
+        }
+        span{
+            width: 50%;
+            @include between;
+            button{
+                width: 50%;
+                height: 50px;
+                cursor: pointer;
+                border-radius: 50px;
+                border-color: #e61c5d;;
+                background-color: #e61c5d;;
+                color: white;
+                letter-spacing: 2px;
+                transition: all 0.5s ease;
+                &:hover{
+                    filter: brightness(90%);
+                }
+            }
+            a{
+                width: 40%;
+                height: 50px;
+                @include center;
+                color: white;
+                border: 2px solid;
+                border-radius: 50px;
+                transition: all 0.5s ease;
+                letter-spacing: 2px;
+                &:hover{
+                    background-color: white;
+                    border-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 561px) {
+    .section1{
+        .center{
+            span{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section1{
+        .center{
+            span{
+                width: 100%;
+                @include center;
+                gap: 20px;
+                a, button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

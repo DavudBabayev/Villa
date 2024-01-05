@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section1 {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section1 nav {
+  padding: 50px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section1 nav a {
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+}
+.section1 nav i {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+.section1 .center {
+  width: 100%;
+  min-height: 675px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.section1 .center h1 {
+  font-size: 80px;
+  color: white;
+}
+.section1 .center p {
+  font-size: 30px;
+  color: white;
+}
+.section1 .center span {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .center span button {
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50px;
+  border-color: #e61c5d;
+  background-color: #e61c5d;
+  color: white;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+.section1 .center span button:hover {
+  filter: brightness(90%);
+}
+.section1 .center span a {
+  width: 40%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 2px solid;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  letter-spacing: 2px;
+}
+.section1 .center span a:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 992px) and (min-width: 561px) {
+  .section1 .center span {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .section1 .center span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .section1 .center span a, .section1 .center span button {
+    width: 100%;
+  }
+}
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: none;
+  z-index: 10000;
+}
+.menu .menucon {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menucon .bi-x {
+  font-size: 70px;
+  color: gray;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.menu .menucon ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu .menucon ul a {
+  font-size: 40px;
+  color: black;
+  position: relative;
+}
+.menu .menucon ul a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 20px;
+  background-color: #e61c5d;
+  position: absolute;
+  z-index: -1;
+  bottom: 8px;
+  transition: all 0.5s ease;
+}
+.menu .menucon ul a:hover::after {
+  width: 140px;
+}
+.menu .menucon .contact {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.menu .menucon .contact div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu .menucon .contact div h5 {
+  color: gray;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.menu .menucon .contact div p, .menu .menucon .contact div a {
+  color: gray;
+}
+
+@media screen and (max-width: 560px) {
+  .menu .menucon {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu .menucon .contact {
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu .menucon .contact div {
+    width: 50%;
+  }
+}
+.section2 {
+  width: 100%;
+  padding-top: 100px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+.section2 .sec2con {
+  width: 100%;
+}
+.section2 .sec2con .p {
+  color: gray;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.section2 .sec2con .card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section2 .sec2con .card div {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section2 .sec2con .card div img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.section2 .sec2con .card div a {
+  font-size: 18px;
+  color: black;
+  transition: all 0.5s ease;
+}
+.section2 .sec2con .card div a:hover {
+  color: #e61c5d;
+}
+.section2 .sec2con .card div aside {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .sec2con .card div aside span i {
+  color: #e61c5d;
+}
+.section2 .sec2con .card div aside p {
+  color: gray;
+}
+
+@media screen and (max-width: 992px) and (min-width: 561px) {
+  .section2 .sec2con .card div {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 560px) {
+  .section2 .sec2con .card div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.section3 {
+  width: 100%;
+  padding-top: 100px;
+}
+.section3 .sec3con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .sec3con .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section3 .sec3con .text h1 {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.section3 .sec3con .text p {
+  color: gray;
+  line-height: 2;
+}
+.section3 .sec3con .bot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section3 .sec3con .bot i {
+  font-size: 44px;
+  cursor: pointer;
+}
+.section3 .sec3con .bot .karusel-container {
+  width: 80%;
+  overflow: hidden;
+}
+.section3 .sec3con .bot .karusel-container .karusel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 600%;
+}
+.section3 .sec3con .bot .karusel-container .karusel img {
+  width: 16.6666666667%;
+  height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .section3 .sec3con .text {
+    width: 100%;
+  }
+  .section3 .sec3con .bot i {
+    display: none;
+  }
+  .section3 .sec3con .bot .karusel-container {
+    width: 100%;
+  }
+}
+.section4 {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  margin-top: -200px;
+  padding-bottom: 100px;
+  padding-top: 300px;
+}
+.section4 .sec4con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .sec4con .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section4 .sec4con .text h1 {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.section4 .sec4con .text p {
+  color: gray;
+  line-height: 2;
+}
+.section4 .sec4con .card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section4 .sec4con .card div {
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  background-color: white;
+  padding-bottom: 20px;
+}
+.section4 .sec4con .card div img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.section4 .sec4con .card div p {
+  color: gray;
+  margin: 15px;
+}
+.section4 .sec4con .card div a {
+  color: black;
+  font-size: 20px;
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+.section4 .sec4con .card div a:hover {
+  color: #e61c5d;
+}
+
+@media screen and (max-width: 992px) and (min-width: 561px) {
+  .section4 .sec4con .text {
+    width: 100%;
+  }
+  .section4 .sec4con .card div {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 560px) {
+  .section4 .sec4con .text {
+    width: 100%;
+  }
+  .section4 .sec4con .card div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.section5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.section5 h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+.section5 .card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section5 .card div {
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section5 .card div img {
+  width: 70px;
+  height: 70px;
+  border-radius: 999999px;
+}
+.section5 .card div i {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
+.section5 .card div p {
+  color: gray;
+  margin: 15px;
+}
+
+@media screen and (max-width: 560px) {
+  .section5 .sec5con .card div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  padding: 100px 0;
+}
+footer .foot1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+footer .foot1 div {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  margin-bottom: 20px;
+}
+footer .foot1 div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .foot1 div ul a {
+  color: rgb(138, 138, 138);
+}
+footer .foot1 div ul a:hover {
+  filter: brightness(150%);
+}
+footer .foot1 div i {
+  color: rgb(138, 138, 138);
+  filter: brightness(150%);
+}
+footer .foot1 div p {
+  color: rgb(138, 138, 138);
+  margin: 5px 0 30px 0;
+}
+footer .foot1 div span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(138, 138, 138);
+}
+footer .foot1 div span input {
+  width: 70%;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  height: 30px;
+}
+footer .foot1 div span i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+footer .foot2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(138, 138, 138);
+  border-top: 2px solid rgb(138, 138, 138);
+  padding-top: 20px;
+}
+footer .foot2 a {
+  color: rgb(138, 138, 138);
+}
+footer .foot2 a:hover {
+  filter: brightness(150%);
+}
+footer .foot2 ul {
+  width: 100px;
+  display: flex;
+  gap: 10px;
+}
+footer .foot2 ul i {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 560px) {
+  footer .foot1 div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  footer .foot2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=index.css.map */
