@@ -1,0 +1,101 @@
+.section4det {
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    .sec4con {
+        width: 100%;
+        @include center;
+
+        .text {
+            width: 60%;
+            @include center;
+            gap: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 70px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+
+            p {
+                color: gray;
+                line-height: 2;
+            }
+        }
+
+        .card {
+            width: 100%;
+            @include center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            div {
+                flex: 1 1 calc(33% - 20px);
+                max-width: calc(33% - 20px);
+                background-color: white;
+                padding-bottom: 20px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    cursor: pointer;
+                }
+
+                p {
+                    color: gray;
+                    margin: 15px;
+                }
+
+                a {
+                    color: black;
+                    font-size: 20px;
+                    margin: 15px;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: #e61c5d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width:561px) {
+    .section4 {
+        .sec4con {
+            .text {
+                width: 100%;
+            }
+
+            .card {
+                div {
+                    flex: 1 1 calc(50% - 20px);
+                    max-width: calc(50% - 20px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .section4 {
+        .sec4con {
+            .text {
+                width: 100%;
+            }
+
+            .card {
+                div {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

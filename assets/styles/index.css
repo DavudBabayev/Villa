@@ -360,6 +360,13 @@ ul {
   color: gray;
   line-height: 2;
 }
+.section4 .sec4con #search {
+  width: 200px;
+  height: 30px;
+  padding-left: 5px;
+  margin-bottom: 30px;
+  outline: none;
+}
 .section4 .sec4con .card {
   width: 100%;
   display: flex;
@@ -371,6 +378,7 @@ ul {
   max-width: calc(33% - 20px);
   background-color: white;
   padding-bottom: 20px;
+  position: relative;
 }
 .section4 .sec4con .card div img {
   width: 100%;
@@ -388,6 +396,154 @@ ul {
   transition: all 0.5s ease;
 }
 .section4 .sec4con .card div a:hover {
+  color: #e61c5d;
+}
+.section4 .sec4con .card div .bi-heart, .section4 .sec4con .card div .bi-heart-fill {
+  position: absolute;
+  z-index: 100;
+  color: red;
+  font-size: 24px;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.section4 .sec4con .card div .bi-heart:hover, .section4 .sec4con .card div .bi-heart-fill:hover {
+  transform: scale(1.2);
+  filter: brightness(120%);
+}
+.section4 .sec4con .card div span {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.section4 .sec4con .card div span .delete, .section4 .sec4con .card div span .update {
+  width: 28%;
+  height: 25px;
+  border: none;
+  color: white;
+}
+.section4 .sec4con .card div span .details {
+  width: 28%;
+  height: 25px;
+  margin: 0;
+}
+.section4 .sec4con .card div span .details button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+.section4 .sec4con .card div span .delete {
+  background-color: red;
+}
+.section4 .sec4con .card div span .update {
+  background-color: green;
+}
+.section4 .sec4con .load {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-image: linear-gradient(rgb(248, 1, 116), rgb(242, 0, 242));
+  border: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.section4 .sec4con .load:hover {
+  filter: brightness(90%);
+}
+
+@media screen and (max-width: 992px) and (min-width: 561px) {
+  .section4 .sec4con .text {
+    width: 100%;
+  }
+  .section4 .sec4con .card div {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 560px) {
+  .section4 .sec4con .text {
+    width: 100%;
+  }
+  .section4 .sec4con .card div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.section4det {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.section4det .sec4con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4det .sec4con .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section4det .sec4con .text h1 {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.section4det .sec4con .text p {
+  color: gray;
+  line-height: 2;
+}
+.section4det .sec4con .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section4det .sec4con .card div {
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  background-color: white;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section4det .sec4con .card div img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.section4det .sec4con .card div p {
+  color: gray;
+  margin: 15px;
+}
+.section4det .sec4con .card div a {
+  color: black;
+  font-size: 20px;
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+.section4det .sec4con .card div a:hover {
   color: #e61c5d;
 }
 
@@ -548,4 +704,77 @@ footer .foot2 ul i {
     flex-direction: column;
     gap: 30px;
   }
+}
+.updatediv {
+  display: none;
+  flex-direction: column;
+  top: calc(60% - 240px);
+  left: calc(50% - 190px);
+  position: fixed;
+  z-index: 1000;
+  width: 380px;
+  height: 330px;
+}
+
+form {
+  background: linear-gradient(to top, #001F3F 0%, #003366 25%, #508de8 50%, #9ac9ff 75%, #c2e1fb 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+
+form p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  outline: none;
+}
+
+.img2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 99999999px;
+  border: 1px solid black;
+}
+
+.img2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 9999999px;
+}
+
+#submit {
+  background-color: #c2e1fb;
+  padding: 6px 6px;
+  border: none;
+  color: #001F3F;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.upbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 9999999px;
+  background-color: #e61c5d;
+  position: fixed;
+  z-index: 99;
+  right: -100px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  transition: all 1s ease;
 }/*# sourceMappingURL=index.css.map */

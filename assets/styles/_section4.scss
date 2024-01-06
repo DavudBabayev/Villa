@@ -28,6 +28,14 @@
             }
         }
 
+        #search{
+            width: 200px;
+            height: 30px;
+            padding-left: 5px;
+            margin-bottom: 30px;
+            outline: none;
+        }
+
         .card {
             width: 100%;
             display: flex;
@@ -39,6 +47,7 @@
                 max-width: calc(33% - 20px);
                 background-color: white;
                 padding-bottom: 20px;
+                position: relative;
 
                 img {
                     width: 100%;
@@ -61,6 +70,66 @@
                         color: #e61c5d;
                     }
                 }
+                .bi-heart, .bi-heart-fill{
+                    position: absolute;
+                    z-index: 100;
+                    color: red;
+                    font-size: 24px;
+                    top: 10px;
+                    right: 20px;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        transform: scale(1.2);
+                        filter: brightness(120%);
+                    }
+                }
+                span{
+                    width: 80%;
+                    margin-left: 10%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .delete, .update{
+                        width: 28%;
+                        height: 25px;
+                        border: none;
+                        color: white;
+                    }
+                    .details{
+                        width: 28%;
+                        height: 25px;
+                        margin: 0;
+                        button{
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            background-color: blue;
+                            color: white;
+                        }
+                    }
+                    .delete{
+                        background-color: red;
+                    }
+                    .update{
+                        background-color: green;
+                    }
+                }
+            }
+        }
+        .load{
+            width: 200px;
+            height: 50px;
+            @include center;
+            margin-top: 50px;
+            background-image: linear-gradient(rgb(248, 1, 116), rgb(242, 0, 242));
+            border: none;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            &:hover{
+                filter: brightness(90%);
             }
         }
     }
