@@ -26,6 +26,13 @@
                 line-height: 2;
             }
         }
+        #search{
+            width: 200px;
+            height: 30px;
+            padding-left: 5px;
+            margin-bottom: 30px;
+            outline: none;
+        }
 
         .card {
             width: 100%;
@@ -61,6 +68,31 @@
                         color: #e61c5d;
                     }
                 }
+                .delete{
+                    margin-top: 20px;
+                    margin-left: calc(50% - 50px);
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid blue;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50px;
+                }
+            }
+        }
+        .load{
+            width: 200px;
+            height: 50px;
+            @include center;
+            margin-top: 50px;
+            background-image: linear-gradient(rgb(248, 1, 116), rgb(242, 0, 242));
+            border: none;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            &:hover{
+                filter: brightness(90%);
             }
         }
     }

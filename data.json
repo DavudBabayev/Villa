@@ -47,6 +47,32 @@
       "img": "https://preview.colorlib.com/theme/villa/img/img_2.jpg",
       "time": "FEBRUARY 26, 2018",
       "link": "Five Reasons to Stay at Villa Resort"
+    },
+    {
+      "id": 9,
+      "img": "https://preview.colorlib.com/theme/villa/img/img_3.jpg",
+      "time": "FEBRUARY 26, 2018",
+      "link": "Five Reasons to Stay at Villa Resort"
+    }
+  ],
+  "fav": [
+    {
+      "id": 1,
+      "img": "https://preview.colorlib.com/theme/villa/img/img_1.jpg",
+      "time": "FEBRUARY 26, 2018",
+      "link": "Five Reasons to Stay at Villa Resort"
+    },
+    {
+      "id": 2,
+      "img": "https://preview.colorlib.com/theme/villa/img/img_2.jpg",
+      "time": "FEBRUARY 26, 2018",
+      "link": "Five Reasons to Stay at Villa Resort"
+    },
+    {
+      "id": 3,
+      "img": "https://preview.colorlib.com/theme/villa/img/img_3.jpg",
+      "time": "FEBRUARY 26, 2018",
+      "link": "Five Reasons to Stay at Villa Resort"
     }
   ]
 }
